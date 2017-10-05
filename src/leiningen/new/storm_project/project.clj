@@ -6,4 +6,5 @@
   :dependencies [[org.clojure/clojure "1.7.0"]]
   :aot [{{ns-name}}.TopologySubmitter]
   ;; include storm dependency only in dev because production storm cluster provides it
-  :profiles {:dev {:dependencies [[org.apache.storm/storm-core "0.10.0"]]}})
+  :profiles {:dev {:dependencies [[org.apache.storm/storm-core "0.10.0"]]}
+             :provided {:dependencies [[org.apache.storm/storm-core "0.10.0"]]}})
